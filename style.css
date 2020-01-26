@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: #2c3e50;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 110px;
+  font-size: 70px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+form input {
+  width: 220px;
+  height: 30px;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.todo_form {
+  margin: 20px 0;
+}
+
+.todo_line {
+  width: 400px;
+  height: 1px;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+::placeholder {
+  font-size: 12px;
+  color: #3a3a3a;
+  text-align: center;
+}
+.toDoList li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.toDoList li label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  background: url(img/checkbox.svg);
+  cursor: pointer;
+}
+.toDoList li label.checked {
+  background: url(img/checked.svg);
+}
+.toDoList li label input {
+  display: none;
+}
+.toDoList li label.checked + span {
+  text-decoration: line-through;
+  opacity: 0.9;
+}
+
+.toDoList li span {
+  display: inline-block;
+  width: 200px;
+}
+
+.toDoList li button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  outline: none;
+  cursor: pointer;
+}
+.toDoList li button:hover {
+  color: crimson;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+  transition: 0.5s;
+}
+
+.bgImage.img1 {
+  background: url(img/1.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.bgImage.img2 {
+  background: url(img/2.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.bgImage.img3 {
+  background: url(img/3.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.bgImage.img4 {
+  background: url(img/4.jpg) no-repeat center;
+  background-size: cover;
+}
+.bgImage.img5 {
+  background: url(img/5.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.bgImage.img6 {
+  background: url(img/6.jpg) no-repeat left;
+  background-size: cover;
+}
+
+.weather-container {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 35px;
+}
+.weather-icon {
+  position: absolute;
+  left: -70px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(img/weather-icon.svg) no-repeat;
+  background-size: cover;
+}
+.weather-icon.weather-01d {
+  background-position: 0 0;
+}
+.weather-icon.weather-01n {
+  background-position: -60px 0;
+}
+.weather-icon.weather-02d {
+  background-position: -120px 0;
+}
+.weather-icon.weather-02n {
+  background-position: -180px 0;
+}
+.weather-icon.weather-03d {
+  background-position: -240px 0;
+}
+.weather-icon.weather-03n {
+  background-position: -240px 0;
+}
+.weather-icon.weather-04d {
+  background-position: -240px 0;
+}
+.weather-icon.weather-04n {
+  background-position: -240px 0;
+}
+.weather-icon.weather-09d {
+  background-position: -300px 0;
+}
+.weather-icon.weather-09n {
+  background-position: -300px 0;
+}
+.weather-icon.weather-10d {
+  background-position: -360px 0;
+}
+.weather-icon.weather-10n {
+  background-position: -360px 0;
+}
+.weather-icon.weather-11d {
+  background-position: -420px 0;
+}
+.weather-icon.weather-11n {
+  background-position: -420px 0;
+}
+.weather-icon.weather-13d {
+  background-position: -480px 0;
+}
+.weather-icon.weather-13n {
+  background-position: -480px 0;
+}
+.weather-icon.weather-50d {
+  background-position: -540px 0;
+}
+.weather-icon.weather-50n {
+  background-position: -540px 0;
+}
+.weather {
+  font-size: 40px;
+  padding-left: 10px;
+}
+.weather-location {
+  font-size: 20px;
+  line-height: 30px;
+}

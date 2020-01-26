@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS_app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="js-clock">
+        <h1>00:00:00</h1>
+      </div>
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDoForm todo_form">
+        <input type="text" placeholder="Write a to do" />
+      </form>
+      <span class="todo_title">- To do list -</span>
+      <div class="todo_line"></div>
+      <ul class="js-toDoList toDoList"></ul>
+    </div>
+    <div class="weather-container">
+      <div class="weather-icon js-weatherIcon"></div>
+      <span class="weather js-weather"></span>
+      <span class="weather-location js-weatherLocation"></span>
+    </div>
+    <div class="bgImage"></div>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
