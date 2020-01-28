@@ -35,7 +35,7 @@ function paintToDo(text, isChecked) {
   li.appendChild(label);
   label.appendChild(checkbox);
   span.innerText = text;
-  li.appendChild(span);
+  label.appendChild(span);
   li.appendChild(delBtn);
   li.id = newId;
   toDoList.appendChild(li);

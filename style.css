@@ -73,20 +73,23 @@ form input {
   list-style: none;
 }
 .toDoList li label {
+  cursor: pointer;
+}
+.toDoList li label::before {
+  content: "";
   display: inline-block;
   width: 12px;
   height: 12px;
   margin-right: 10px;
   background: url(img/checkbox.svg);
-  cursor: pointer;
 }
-.toDoList li label.checked {
+.toDoList li label.checked::before {
   background: url(img/checked.svg);
 }
 .toDoList li label input {
   display: none;
 }
-.toDoList li label.checked + span {
+.toDoList li label.checked span {
   text-decoration: line-through;
   opacity: 0.9;
 }
