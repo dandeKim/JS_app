@@ -14,7 +14,7 @@
 
 - `getTime()` : 현재 시각을 구하기 위한 함수
   - Date 객체를 생성하여 현재 시각 구하기
-  - clockTitle의 텍스트를 현재 시각으로 변경
+  - clockHours, clockMinutes, clockSeconds의 텍스트를 현재 시각으로 변경
   - 삼항 조건 연산자를 사용해 한 자릿수일 경우 앞에 '0'을 붙여줌
 
 ```javascript
@@ -23,9 +23,9 @@ function getTime() {
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
-  clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds}`;
+  clockHours.innerText = `${hours < 10 ? `0${hours}` : hours}:`;
+  clockMinutes.innerText = `${minutes < 10 ? `0${minutes}` : minutes}:`;
+  clockSeconds.innerText = `${seconds < 10 ? `0${seconds}` : seconds}`;
 }
 ```
 
