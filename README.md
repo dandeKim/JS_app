@@ -1,6 +1,6 @@
 # JS_app
 ![](https://user-images.githubusercontent.com/60219368/73137741-e3dad000-409e-11ea-9485-0a40203a60af.gif)
-[JS_app 바로가기](https://ofkande.github.io/JS_app/)
+[JS_app 바로가기](https://dandekim.github.io/JS_app/)
 
 ## index
 
